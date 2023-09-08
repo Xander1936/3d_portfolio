@@ -30,7 +30,7 @@ const Navbar = () => {
         className="w-9 h-9 object-contain" />
         <p className='text-white text-[18px] font-bold cursor-pointer flex'>
           Alexandre Massoda &nbsp; {/* &nbsp veut dire empty space */}
-          <span className='sm:block hidden'>|  Software Developer: ReactJS</span>
+          <span className='sm:block hidden'>|&nbsp; Software Developer - React</span>
         </p>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
@@ -83,7 +83,7 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-      </div>
+      </div> 
     </nav>
   )
 }
