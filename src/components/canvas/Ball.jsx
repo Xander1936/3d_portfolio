@@ -26,6 +26,7 @@ const Ball = (props) => {
           flatShading
           map={decal}
         />
+        :;!
       </mesh>
     </Float>
   )

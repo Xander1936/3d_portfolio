@@ -1,12 +1,17 @@
-import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component"
+import { 
+  VerticalTimeline, 
+  VerticalTimelineElement, 
+} from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
 
 import 'react-vertical-timeline-component/style.min.css';
 
 import { styles } from '../styles';
-import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
+
+
+import { experiences } from "../constants";
 
 const ExperienceCard = ({ experience })  => (
   <VerticalTimelineElement 
@@ -36,7 +41,7 @@ const ExperienceCard = ({ experience })  => (
         {experience.points.map((point, index) => (
           <li 
             key={`experience-point-${index}`}
-            className="text-white-100 text-[14px] pl-1 tracking-wider" 
+            className="text-white-100 text-[14px] text-justify pl-1 tracking-wider" 
           >
             {point}
           </li>
@@ -69,6 +74,6 @@ const Experience = () => {
   )
 }
 
-export default SectionWrapper(Experience, 'work')
+export default SectionWrapper(Experience, "work");
 
 // <></>
