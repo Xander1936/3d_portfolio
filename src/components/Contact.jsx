@@ -27,14 +27,24 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
+    const serviceId = import.meta.env.VITE_APP_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY;
+
+    if (!serviceId || !templateId || !publicKey) {
+      alert("The contact form is not configured yet. Please try again later.");
+      return;
+    }
+
     setLoading(true);
 
-    emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+    try {
+      await emailjs.send(
+        serviceId,
+        templateId,
         {
           from_name: form.name,
           to_name: "Alexandre Massoda",
@@ -42,26 +52,21 @@ const Contact = () => {
           to_email: "alexandrehervemassodamambeleck@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
-
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
-
-          alert("Ahh, something went wrong. Please try again.");
-        }
+        publicKey
       );
+
+      setForm({
+        name: "",
+        email: "",
+        message: "",
+      });
+      alert("Thank you. I will get back to you as soon as possible.");
+    } catch (error) {
+      console.error(error);
+      alert("Ahh, something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
