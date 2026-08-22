@@ -172,19 +172,19 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+        "I highly recommend Alexandre after working five years with him at Skysoft. He is a meticulous, curious engineer with amazing positive energy. He quickly masters complex technical environments like MERN, Java, and Angular with impressive agility. He is deeply sociable, shares knowledge, and lifts teams up. Any technical team would be fortunate to have him!",
+      name: "Loic Njanji",
+      designation: "Lead Full Stack Developer",
+      company: "Skysoft Technology CM",
+      image: "https://media.licdn.com/dms/image/v2/D4D03AQGC80YZIAPhpA/profile-displayphoto-scale_400_400/B4DZ9Mhk0LJAAg-/0/1783695299169?e=1788998400&v=beta&t=4K2dT82z7ZK-YBtdt5cSDdJ3dsegUBjNndcuxoUDSKE",
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
+        "It was a pleasure to work with Alex. He is very motivated to get the ultimate results and takes feedback very well. In Web Development and Engineering overall he will be very prepared to be a master level professional with his attention to detail. I cannot recommend him enough He is that amazing!",
+      name: "Adam Dogole",
+      designation: "ICF Certified Executive Coach & Globally Certified Emotional Intelligence Coach",
+      company: "Self-employed",
+      image: "https://media.licdn.com/dms/image/v2/D4E03AQFGxdl7Pp682g/profile-displayphoto-shrink_400_400/B4EZdhwRqaHsAk-/0/1749691735038?e=1788998400&v=beta&t=WEj9Cs1MU71j2r-zrD8EuvTqkcT0g4OuNwlUrhmEL4o",
     },
     {
       testimonial:
