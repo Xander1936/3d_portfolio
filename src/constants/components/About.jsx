@@ -56,7 +56,7 @@ const About = () => {
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
         Senior Full-Stack Engineer with 8+ years building cloud-native applications in React, TypeScript, and Node.js — and 5+ years on the front lines of client relationships, sales, and customer support that shaped how I solve problems today. 
-        I design REST APIs and microservices, integrate LLMs ;Claude, Gemini, GPT; into production features, and deploy end-to-end solutions across GCP, AWS, and Kubernetes. 
+        I design REST APIs and microservices, integrate LLMs ;&nbsp; Claude, Gemini, GPT; into production features, and deploy end-to-end solutions across GCP, AWS, and Kubernetes. 
         But the technical stack is only half the story: years spent earning the trust of demanding clients and hitting ambitious targets taught me to listen first, translate business needs into working software, and stay resilient when things get complex. 
         Whether you&apos;re a recruiter looking for someone who ships reliable, scalable code, or a client with an idea that needs to become real — 
         I bring both the engineering depth and the collaborative instinct to get it done. 
